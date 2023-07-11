@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin' , sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,1)), url(qrjLQSt.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100;
+    height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu{
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+   
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color:#00b894 ;
+}
+
+main{
+    width: 100%;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3{
+
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px ;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition:all .5s ease;
+   
+}
+
+section .btnone{
+    /* background: #00b594; */
+    background-color: #fff;
+    color: #000;
+}
+
+section .btntwo{
+    background-color: #000000;
+    color: #fff;
+}
+
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0% { content: "Darjeeling";}
+    20% { content: "Agra";}
+    35% { content: "jaipur";}
+    60% { content: "Kerala";}
+    80% { content: "delhi";}
+    100% { content: "Mumbai";}
+}
+
+.btnone:hover{
+    background: #00b894;
+    color:white;
+}
+
+.btntwo:hover{
+    background-color: #18b89dc5;
+    color: #000;
+}
+
+.btn-login{
+    padding:10px 15px;
+    background-color: #050505;
+    color: #fff;
+    cursor: pointer;
+    font-family:'Josefin' , sans-serif ;
+}
+
+.btn-login:hover{
+    padding: 5px 7px;
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.overlay{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: fixed;
+    top: 0%;
+    height: 100vh;
+    z-index: -1; 
+     opacity: 0;
+     transition: 1s;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+.kro-form{
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+    z-index: 9;
+   
+}
+.showkro-form{
+    top: 50%;
+}
+.kro-form input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.kro-form button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+.kro-form span{
+    position:absolute;
+    color: white;
+    right: 0px;
+    width: 30px;
+    height:30px ;
+    top: 0px;
+    background-color: rgba(62, 204, 223, 0.863);
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+

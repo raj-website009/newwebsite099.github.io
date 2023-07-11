@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+
+  
+    
+    <header>
+        <nav>
+            <div class="logo"> <h1 class=""> My first Web </h1> </div>
+            <div class="menu">
+                
+                <a href="#">Home</a>
+                <a href="#">gallery</a>
+                <a href="https://www.youtube.com/@InsightGaming-xm7rn">About</a>
+                <a href="#">Coteact</a>
+               
+
+            </div>
+        </nav>
+            <main>
+                <section>
+                    <h3>Welcome to my Website</h3>
+                    <h1>Do come & visit my web <span class="change_content"> </span> </h1>
+                    <p>"My web once is not enough"</p>
+                    <a href="#" class="btnone">learn more</a>
+                    <a href="#" class="btntwo"><button class="btn-login">signup</button></a>
+            
+                </section>
+            </main>
+       
+    </header>
+    <div class="overlay" onclick="closeModel()"></div>
+    <div class="kro-form">
+        <span class="close-form">&times;</span>
+        <form action="">
+            <div>
+              <label for="">UserName</label>
+              <input type="UserName">
+            </div> 
+            <div>
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+
+</body>
+<script>
+
+    function showModel(){
+        document.querySelector('.overlay').classList.add('showoverlay');
+        document.querySelector('.kro-form').classList.add('showkro-form');
+    }
+
+    function closeModel(){
+        document.querySelector('.overlay').classList.remove('showoverlay');
+        document.querySelector('.kro-form').classList.remove('showkro-form');
+    }
+
+    var btnlogin=document.querySelector(".btn-login");
+    btnlogin.addEventListener("click",showModel)
+
+    var c=document.querySelector(".close-form");
+    c.addEventListener("click",closeModel)
+</script>
+</html>
